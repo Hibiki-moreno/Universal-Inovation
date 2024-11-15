@@ -1,21 +1,29 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import Navbar from "@/components/navbar";
+import { url } from "inspector";
+import { Apple, HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   
 
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/", icon: Icons.Universal_inovation, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "hello@example.com",
     tel: "+123456789",
     social: {
-      gabo: {
+      Apple:{
+        name:"Apple",
+        url:"https://www.apple.com/mx/store?afid=p238%7CsLHHgzTlu-dc_mtid_1870765e38482_pcrid_719417652932_pgrid_15377145411_pntwk_g_pchan__pexid__ptid_kwd-10778630_&cid=aos-mx-kwgo-brand--slid---product-",
+        icon: Icons.Apple,
+        navbar:true,
+      },
+     React: {
         name: "React",
         url: "https://dub.sh/dillion-github",
-        icon: Icons.whatsapp,
+        icon:Icons.react,
 
         navbar: true,
       },
